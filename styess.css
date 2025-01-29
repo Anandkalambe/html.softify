@@ -1,0 +1,183 @@
+body{
+    background-color: rgba(0, 0, 0, 0.844);
+}
+.head>img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   display: flex;
+    height: 40px;
+    width: 50px;
+    align-items: center;
+    
+    justify-self: center;
+    
+   
+}
+.login
+{
+    background-color:rgb(13, 13, 14);
+    margin-left: 380px;
+    margin-right: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.option{
+    color: white;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin-top: 30px;
+ margin-bottom: 40px;
+}
+.google{
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.378) ;
+   
+    padding: 6px;
+   width: 300px;
+    text-align: center;
+   margin-bottom: 10px;
+}
+ #name{
+    margin-left:10px;
+}
+.facebook{
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.378) ;
+   
+    padding: 6px;
+   width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.apple{
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.378) ;
+   
+    padding: 6px;
+   width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.phonenumber{
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.378) ;
+   
+    padding: 11px;
+   width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr{
+    opacity: 0.3;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 40px;
+}
+.info #username input {
+    background-color:rgb(13, 13, 14);
+   width: 310px;
+   height: 37px;
+   border-radius: 5px;
+   border: 1px,solid,rgba(255, 255, 255, 0.342);
+   margin-bottom: 10px;
+}
+.info #username strong{
+margin-right: 200px;
+margin-bottom: 20px;
+
+}
+.info #paasword strong{
+    margin-right: 250px;
+    margin-bottom: 20px;
+    
+    }
+.info #paasword input {
+    background-color:rgb(13, 13, 14);
+   width: 310px;
+   height: 37px;
+   border-radius: 5px;
+   border: 1px,solid,rgba(255, 255, 255, 0.342);
+   margin-bottom: 10px;
+}
+
+.info button{
+    background-color: #3be477;
+    width: 310px;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    font-weight:bolder;
+
+}
+.info #username strong{
+align-self:flex-start;
+font-size: 0.9rem;
+margin-bottom: 10px;
+margin-top: 30px;
+}
+.info #username strong{
+    align-self:flex-start;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    }
+    .o{
+        display: flex;
+        flex-direction: column;
+    }
+    .tp{
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+    }
+    .oo{
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .footer{
+        background-color: rgb(13, 13, 14);
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 400px;
+        padding-right: 400px;
+        font-size: 20px;
+        font-weight: 5;
+        height: 80px;
+    }
+    @media(max-width:1140px){
+        .login{
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-radius: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        
+        }
+        .footer{
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 10px;
+            font-weight: 1;
+            height: 40px;
+        }
+    }
