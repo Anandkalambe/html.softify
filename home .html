@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web Player:Music for everyone</title>
+    <link rel="stylesheet" href ="spotifyhomepage.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="animation-container">
+        <img src="./assets/spotifylogo.png" alt="spotify logo">
+        <h2>spotify</h2>
+    </div>
+
+    <div id="outerbox" >
+       <div id="upperbox">
+            <div id="spotifylogo">
+                <img src="./assets/spotifylogo.png" height="32px" width="32px" alt="">
+            </div>
+            <div id="home">
+                <svg  class="i" viewBox="0 0 24 24"><path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"></path></svg>
+            </div>
+            <div id="search">
+              <!--<svg  class="s" viewBox="0 0 24 24"><path d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"></path></svg>
+               <h3 id="tt">What do you want to play?</h3>-->
+                 <input   type="text" placeholder="What do you want to play">
+                 <span  class=""><svg  class="n" viewBox="0 0 24 24"><path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"></path><path d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z"></path></svg></span>
+            </div>
+            <div id="q">
+<h2>Premium Support Download  <svg  class="z" viewBox="0 0 16 16"><path d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z"></path><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"></path></svg>
+                    <span><h3 id="hello">Install App</h3></span> </h2>
+                   <!-- <button>Premium Support Download </button>
+                    <button id="hello">Install App</button>-->
+            </div>
+         <div id="x">
+            <svg  class="z" viewBox="0 0 16 16"><path d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z"></path><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"></path></svg>
+        </div>
+        <div id="login">
+            <h2 id="v">Log in</h2>
+        </div>
+       </div>
+       <div id="leftbox">
+            <div id="librarybox">
+                <div id="L">
+                    <div id="Your">
+                        <svg id="img"  viewBox="0 0 24 24" b><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+                        <h1 class="text">Your Library</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="C">
+                    <div id="create">
+                        <div id="K">
+                            <div id="I">
+                        <h2>Create your first playlist</h2>
+                            </div>
+                            <div>
+                                <h3 id="U">It's easy,we;ll help you</h3>    
+                            </div>   
+                        </div>
+                        <div id="O">
+                              <h3 id="icon">Create Playlist</h3>
+                        </div>
+                    </div>
+                    <div id="A">
+                           <div id="B">
+                                 <H2 id="c">Let's find some podcasts to follow</H2>
+                           </div>  
+                           <div>
+                            <h3 id="D">We'll keep you updated on newepisode</h3>
+                           </div>
+                    </div>
+                    <div id="R">
+                        <h3 id="T">Browse podcasts</h3>
+                    </div>
+            </div>
+            <div id="P">
+                  <div id="E">
+                        <h4>Legal</h4>
+                        <h4>safety & Privacy Center</h4>
+                        <h4>Privacy Policy</h4>
+                        <h4>Cookies</h4>
+                        <h4>About Ads</h4>
+                        <h4>Accessibility</h4>
+                        </div>
+                  </div>
+            </div>
+            <div id="M">
+                <svg id="F" viewBox="0 0 16 16"><path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"></path></svg>
+                <h3 id="tx">English </h3>
+            </div>
+      
+       <div id="rightbox" >
+           <div id="playlist">
+            <h2 id="play">Popular artists</h2>
+           </div>
+            <div class="card">
+                <img src="./assets/pritam.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="Pritam">Pritam</h5>
+                  <h6 class="lasttext">Artist</h6>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="./assets/arjit.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="Pritam">Arijit singh</h5>
+                  <h6 class="lasttext">Artist</h6>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="./assets/singer.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="Pritam">Sachin-jigar</h5>
+                  <h6 class="lasttext">Artist</h6>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="./assets/diljith.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="Pritam">Diljit Dosanjh</h5>
+                  <h6 class="lasttext">Artist</h6>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="./assets/sherya.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="Pritam">Shreya Ghoshal</h5>
+                  <h6 class="lasttext">Artist</h6>
+                </div>
+            </div>
+            <div class="card" >
+                <img src="./assets/sing.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="Pritam">Atif Aslam</h5>
+                  <h6 class="lasttext">Artist</h6>
+                </div>
+         
+             </div>  <div id="playlist">
+                <div id="hi">
+                    <h2>Popular albums and singles</h2>
+                </div>
+                    <div class="akash" >
+                        <img src="./assets/honey.jpeg" class="allbox" alt="...">
+                        <div class="card-body">
+                          <h5 id="Pritam">Glory</h5>
+                          <h6 class="lasttext">Yo Yo Honey singh</h6>
+                        </div>
+                    </div>
+                    <div class="akash" >
+                        <img src="./assets/ashiqiu.jpeg" class="allbox" alt="...">
+                        <div class="card-body">
+                          <h5 id="Pritam">Aashiqui 2</h5>
+                          <h6 class="lasttext">Mithoon, Ankit Tiwari</h6>
+                        </div>
+                    </div>
+                    <div class="akash" >
+                        <img src="./assets/jumnmusic.jpeg" class="allbox" alt="...">
+                        <div class="card-body">
+                          <h5 id="Pritam">Who(Remixes)</h5>
+                          <h6 class="lasttext">jimin</h6>
+                        </div>
+                    </div>
+                    <div class="akash" >
+                        <img src="./assets/mismatched.jpeg" class="allbox" alt="...">
+                        <div class="card-body">
+                          <h5 id="Pritam">THE
+                            Mismatched</h5>
+                          <h6 class="lasttext">Mismatched-Cast</h6>
+                        </div>
+                    </div>
+                    <div class="akash" >
+                        <img src="./assets/face.jpeg" class="allbox" alt="...">
+                        <div class="card-body">
+                          <h5 id="Pritam">Making Memories</h5>
+                          <h6 class="lasttext">Karan Aujla,Ikky</h6>
+                        </div>
+                    </div>
+                    <div id="akash" >
+                        <img src="./assets/ajyd.jpeg" class="allbox" alt="...">
+                        <div class="card-body">
+                          <h5 id="Pritam">Yeh Jawaani Hai Deewani</h5>
+                          <h6 class="lasttext">Pritam</h6>
+                        </div>
+                    </div>
+      
+                </div>
+       </div>
+    </div>
+    <script >$(document).ready(function() {
+        // Fade in over 2 seconds
+        $("#animation-container").fadeIn(2000, function() {
+            // Wait for 2 seconds before fading out
+            setTimeout(function() {
+                $("#animation-container").fadeOut(2000, function() {
+                    // Once fade-out is complete, hide the animation container and show the main content
+                    $("#animation-container").css("display", "none");
+                    $("#outerbox").css("display", "block");
+                });
+            }, 2000); // 2 seconds delay before fade-out
+        });
+    
+    
+    
+});$("#upperbox").slideDown;
+$("#home").click(function(){
+    alert("no internet sorry")
+});
+$("#login").click(function(){
+    alert("no internet sorry")
+});
+$("#hello").click(function(){
+    alert("no internet sorry")
+});
+
+    </script>
+</body>
+</html>
